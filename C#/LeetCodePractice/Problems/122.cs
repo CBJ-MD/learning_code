@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-
-namespace TestApp
+﻿namespace LeetCodePractice.Problems.Problem122
 {
-    class Program
+    class Solution
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            Debug.Assert(false, "what the hell!");
-        }
-
         public int MaxProfit(int[] prices)
         {
             int profit = 0;
@@ -28,3 +17,4 @@ namespace TestApp
         }
     }
 }
+

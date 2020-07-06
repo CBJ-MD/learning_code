@@ -1,14 +1,19 @@
-public class Solution {
-    public string Convert(string s, int numRows) {
-        string result = s.Empty;
-        for(int i = 0 ; i < numRows;i++)
+namespace LeetCodePractice.Problems.Problem5
+{
+    public class Solution
+    {
+        public string Convert(string s, int numRows)
         {
-            for (int j = 0; j < s.Length; j += (numRows-i)*2 - 3)
+            string result = string.Empty;
+            for (int i = 0; i < numRows; i++)
             {
-                result += s[j];
-                s = s.Remove(j,1);
+                for (int j = 0; j < s.Length; j += (numRows - i) * 2 - 3)
+                {
+                    result += s[j];
+                    s = s.Remove(j, 1);
+                }
             }
+            return result;
         }
-        return result;
     }
 }

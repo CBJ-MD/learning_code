@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="LeetCode\" />
+    <Compile Remove="LeetCode\**" />
+    <EmbeddedResource Remove="LeetCode\**" />
+    <None Remove="LeetCode\**" />
   </ItemGroup>
 
 </Project>

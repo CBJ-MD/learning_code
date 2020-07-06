@@ -1,13 +1,17 @@
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     public int val;
- *     public TreeNode left;
- *     public TreeNode right;
- *     public TreeNode(int x) { val = x; }
- * }
- */
-/* public class Solution {
+using System;
+using System.Collections.Generic;
+
+namespace LeetCodePractice.Problems.Problem98
+{
+    public class TreeNode
+    {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+        public TreeNode(int x) { val = x; }
+    }
+
+    /* public class Solution {
     public bool IsValidBST(TreeNode root) {
         return IsValid(root, null, null);
     }
@@ -22,27 +26,24 @@
     }
 }
 */
-
-public class Solution{
-    public bool IsValidBST(TreeNode root){
-        int[] nodelist = GetNodes(root).ToArray();
-        int[] sortednodelist = nodelist.Clone() as int[];
-        Array.Sort(sortednodelist);
-        return nodelist.Equals(sortednodelist);
-    }
-
-    private List<int> GetNodes(TreeNode root){
-        if(root == null) return new List<int>();
-        List<int> result = GetNodes(root.left);
-        result.Add(root.val);
-        result.AddRange(GetNodes(root.right));
-        return result;
-        
-    }
-
-    static void Main(string[] args)
+    public class Solution
     {
-        System.Console.WriteLine("hello");
+        public bool IsValidBST(TreeNode root)
+        {
+            int[] nodelist = GetNodes(root).ToArray();
+            int[] sortednodelist = nodelist.Clone() as int[];
+            Array.Sort(sortednodelist);
+            return nodelist.Equals(sortednodelist);
+        }
+
+        private List<int> GetNodes(TreeNode root)
+        {
+            if (root == null) return new List<int>();
+            List<int> result = GetNodes(root.left);
+            result.Add(root.val);
+            result.AddRange(GetNodes(root.right));
+            return result;
+
+        }
     }
 }
-

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I4y36QFWubQDLQTAQY2En5cajJUagRWZ/AOn1hXZj0W9IDhmu9p9X2l3+6OTKuqhCQM1vKQdnngbGRe9qwu/yA==",
+  "dgSpecHash": "w++BEdJMSZq3DP8cvdSX0c3wDQ/G0Mn/A8iKNYti0+O1Vrjyp751+iwPspWdwMSLZZS+VERLKI/PVa2NKkllFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\g1551\\Desktop\\skills\\codes\\onLeetCode\\TestApp\\LeetCodePractice.csproj",
+  "projectFilePath": "C:\\Users\\g1551\\Desktop\\skills\\learning_code\\C#\\LeetCodePractice\\LeetCodePractice.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
