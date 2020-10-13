@@ -47,5 +47,33 @@
             }
         }
         #endregion
+
+        #region Method2(DFS + bitwise operation)
+
+        private int Method2(int n)
+        {
+            var result = 0;
+            Method2_DFS(n, 0, 0, 0, 0, ref result);
+            return result;
+        }
+
+        private void Method2_DFS(int n, int level, int col, int downLeft, int downRight, ref int result)
+        {
+            if (level >= n)
+            {
+                result++;
+                return;
+            }
+
+            int availableBits = ~(col | downLeft | downRight) & (1<<n)-1;// <= 去除除了N位之外的所有位
+            while (availableBits > 0)
+            {
+                // “-” 取反加1，下式取出了availableBits的最后一个“1”
+                int bit = availableBits & (-availableBits);
+                Method2_DFS(n, level + 1, col | bit, (downLeft | bit) << 1, (downRight | bit) >> 1, ref result);
+                availableBits &= (availableBits - 1);
+            }
+        }
+        #endregion
     }
 }
