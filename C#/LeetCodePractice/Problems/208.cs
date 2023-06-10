@@ -189,8 +189,7 @@ namespace LeetCodePractice.Problems.Problem208
                 int index = word[i] - 'a';
                 if (current.ChildNodes[index] == null)
                 {
-                    TrieNode node = new TrieNode(word[i]);
-                    current.ChildNodes[index] = node;
+                    current.ChildNodes[index] = new TrieNode(word[i]);
                 }
                 current = current.ChildNodes[index];
             }
