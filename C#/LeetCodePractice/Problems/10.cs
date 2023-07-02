@@ -12,6 +12,7 @@ namespace LeetCodePractice.Problems.Problem10
             bool[,] res = new bool[lenP + 1, lenS + 1];
             res[0, 0] = true;
 
+            // Initialize j = 0 cases.
             for (int i = 0; i < lenP; i++)
             {
                 if (p[i] == '*')
@@ -28,7 +29,8 @@ namespace LeetCodePractice.Problems.Problem10
                     {
                         if (IsMatch(s, p, i - 2, j - 1))
                         {
-                            res[i, j] = res[i, j - 1] || res[i - 1, j - 1] || res[i - 2, j];
+                            res[i, j] = res[i, j - 1] || res[i - 1, j - 1] 
+                                || res[i - 2, j]; // We can ignore "a*" even if it is matched.
                         }
                         else
                         {

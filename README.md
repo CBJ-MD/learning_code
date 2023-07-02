@@ -1,8 +1,8 @@
 # Learning Code
 
 ## LeetCode Problems:
-1. [1. Two Sum]()
-1. [5. ]()
+1. [1. Two Sum](https://github.com/CBJ-MD/learning_code/blob/master/C%23/LeetCodePractice/Problems/1.cs)
+1. [5. ](https://github.com/CBJ-MD/learning_code/blob/master/C%23/LeetCodePractice/Problems/5.cs)
 1. [10. Regular Expression Matching](https://github.com/CBJ-MD/learning_code/blob/master/C%23/LeetCodePractice/Problems/10.cs)
 1. [19. ]()
 1. [22. ]()
